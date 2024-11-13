@@ -1,0 +1,15 @@
+<div>
+  <app-bootstrap-nav *ngIf="bootstrap_nav"></app-bootstrap-nav>
+  <app-talwind-nav *ngIf="!bootstrap_nav"></app-talwind-nav>
+  <div class="button_position p-2 d-flex justify-content-evenly align-items-center" [ngClass]="bootstrap_nav ? 'bg-dark': 'bg-gray-800'">
+      <p class="text-white">nuvarande Navbar : <span [ngClass]="'text-'+(bootstrap_nav ? 'info': 'primary')">{{bootstrap_nav? 'bootstrap': 'Tailwind'}}</span></p>
+      <div class="p-2">
+          <label for="toggleMenubutton" class="px-2 text-white">Byt navbar till: </label>
+          <button type="button" id="toggleMenubutton" [ngClass]="'btn btn-'+(bootstrap_nav ? 'info': 'primary')" (click)="toggleNavbarStyle()">
+            {{!bootstrap_nav? 'bootstrap': 'Tailwind'}}
+          </button>
+      </div>
+    </div>
+</div>
+<router-outlet />
+<app-footer></app-footer>
