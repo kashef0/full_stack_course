@@ -32,4 +32,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: kmoment01
-          folder: kmoment01/New_angular_app/dist/New_angular_app
+          folder: kmoment01/New_angular_app/dist/New_angular_app/browser
