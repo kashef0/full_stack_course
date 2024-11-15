@@ -1,0 +1,35 @@
+name: Deploy Angular App to GitHub Pages
+
+on:
+  push:
+    branches:
+      - kmoment01  # The branch you want to deploy from
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: |
+          cd kmoment01/kmoment01/New_angular_app
+          npm install
+
+      - name: Build Angular App
+        run: |
+          cd kmoment01/kmoment01/New_angular_app
+          npm run build -- --configuration production --base-href "/full_stack_course/"
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: kmoment01/kmoment01/New_angular_app/dist/New_angular_app
