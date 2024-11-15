@@ -11,5 +11,5 @@ export const routes: Routes = [
     { path: 'tailwind', component: TailwindPageComponent},
     { path: 'publicering', component: PubliceringComponent},
     { path: '**', component: NotFoundComponent},
-    { path: '', redirectTo: '/hem', pathMatch: 'full'}
+    { path: '', redirectTo: '/home', pathMatch: 'full'}
 ];

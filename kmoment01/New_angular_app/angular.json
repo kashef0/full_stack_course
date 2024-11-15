@@ -90,7 +90,6 @@
                 "input": "src",
                 "output": "/"
               }
-              
             ],
             "styles": [
               "src/styles.css"
