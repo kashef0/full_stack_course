@@ -31,5 +31,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages
-          folder: kmoment01/kmoment01/New_angular_app/dist/New_angular_app
+          branch: kmoment01
+          folder: kmoment01/New_angular_app/dist/New_angular_app
