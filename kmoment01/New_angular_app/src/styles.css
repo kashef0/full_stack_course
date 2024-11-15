@@ -4,3 +4,7 @@
         width: 90% !important;
     }
 }
+
+.div-width {
+    max-width: 56rem;
+}
