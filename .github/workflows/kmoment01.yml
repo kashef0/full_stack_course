@@ -26,7 +26,7 @@ jobs:
       - name: Build Angular App
         run: |
           cd kmoment01/kmoment01/New_angular_app
-          npm run build -- --configuration production --base-href "/full_stack_course/"
+          ng run build -- --configuration production --base-href "/full_stack_course/"
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
