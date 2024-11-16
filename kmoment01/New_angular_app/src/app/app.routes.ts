@@ -10,6 +10,6 @@ export const routes: Routes = [
     { path: 'bootstrap', component: BootstrapPageComponent},
     { path: 'tailwind', component: TailwindPageComponent},
     { path: 'publicering', component: PubliceringComponent},
-    { path: '**', component: NotFoundComponent},
-    { path: '', redirectTo: '/home', pathMatch: 'full'}
+    { path: '', redirectTo: '/home', pathMatch: 'full'},
+    { path: '**', component: NotFoundComponent}
 ];
