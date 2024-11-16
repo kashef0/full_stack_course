@@ -12,4 +12,4 @@ export const routes: Routes = [
     { path: 'publicering', component: PubliceringComponent},
     { path: '', redirectTo: '/home', pathMatch: 'full'},
     { path: '**', component: NotFoundComponent}
-]
+];
